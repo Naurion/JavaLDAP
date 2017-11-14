@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="script.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<form action = "CreateUser" method = "POST">
+         First name: <input type = "text" name = "firstName">
+         <br />
+         Last name: <input type = "text" name = "lastName" />
+         <br />
+         Login name: <input type = "text" name = "loginName" />
+         <br />
+         Password: <input type = "password" name = "password">
+         <br />
+         Group: <input type = "text" name = "group">
+         <br />
+         <input type = "submit" value = "Create" />
+	</form>
+
+    <br />
+    <form action="CreateUserFromFile" enctype="multipart/form-data" method="GET">
+    	<input type="file" name="filename"/>
+    	<br />
+    	<input type="button" onclick="doIt()" value="DO IT!">
+    	<input type="submit" onclick="doIt()" value= "Create from file"/>
+    </form>
+
+</body>
+</html>
